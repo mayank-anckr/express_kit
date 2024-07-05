@@ -1,11 +1,10 @@
-import { createClient } from "@supabase/supabase-js";
+import supabaseClient from "../../supabase";
 import { createCustomError } from "../utils/customError";
 import getImageName from "./imageName";
 
 const SUPABASE_URL = process.env.NEW_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SECRETKEY;
 const BUCKET_NAME = process.env.SUPABASE_BUCKET;
-const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const fileDownloadFromSupabase = async (filePath, res) => {
   try {
