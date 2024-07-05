@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/app.ts",
+    "start": "nodemon src/index.ts",
     "migration-creation": "npx sequelize-cli migration:generate --name table_name",
     "migration-push": "npm run sequelize db:migrate",
     "sequalize": "npx sequelize-cli init "
