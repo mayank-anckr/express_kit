@@ -1,0 +1,8 @@
+2024-06-21 10:15:48 [32minfo[39m: Received event: 
+2024-06-21 10:15:48 [32minfo[39m: POST /api/demo 201 46ms
+2024-06-21 10:24:19 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: Received event: 
+2024-06-21 10:24:19 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: POST /api/demo 201 18ms
+2024-06-21 10:25:05 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: Received event: 
+2024-06-21 10:25:05 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: POST /api/demo 201 10ms
+2024-06-21 10:31:21 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: Received event: , Data: "abcasde"
+2024-06-21 10:31:21 [32minfo[39m [development] Hostname: mayank-ghildiyal-OptiPlex-390, Platform: linux, Arch: x64: POST /api/demo 201 7ms

@@ -1,0 +1,56 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "plugins": ["express"],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    // Possible Errors
+    "no-console": 2, // Allow console statements (common in Node.js development)
+    "no-debugger": "warn", // Warn when using debugger (useful for development)
+
+    // Best Practices
+    "curly": "error", // Enforce consistent brace style for all control statements
+    "eqeqeq": ["error", "always"], // Require === and !== instead of == and !=
+    "no-eval": "error", // Disallow the use of eval()
+    "no-implied-eval": "error", // Disallow the use of eval()-like methods
+    "no-throw-literal": "error", // Disallow throwing literals as exceptions
+    "prefer-promise-reject-errors": "error", // Require using Error objects as Promise rejection reasons
+
+    // Variables
+    "no-undef": "error", // Disallow the use of undeclared variables
+    "no-unused-vars": ["warn", { "args": "none" }], // Warn on unused variables
+
+    // Stylistic Issues
+    "indent": ["error", 2], // Enforce consistent indentation (2 spaces)
+    "quotes": ["error", "single", { "avoidEscape": true }], // Enforce single quotes, allow double quotes to avoid escaping
+    "semi": ["error", "always"], // Require semicolons
+    "comma-dangle": ["error", "always-multiline"], // Require trailing commas in multiline object literals
+
+    // Node.js and CommonJS
+    "global-require": "error", // Require calls to require() to be at the top-level module scope
+    "handle-callback-err": "error", // Require error handling in callbacks
+    "no-mixed-requires": ["error", { "grouping": true, "allowCall": true }], // Disallow require calls to be mixed with regular variable declarations
+    "no-new-require": "error", // Disallow new operators with calls to require
+    "no-path-concat": "error", // Disallow string concatenation with __dirname and __filename
+
+    // ECMAScript 6
+    "arrow-spacing": ["error", { "before": true, "after": true }], // Enforce consistent spacing before and after the arrow in arrow functions
+    "no-var": "error", // Require let or const instead of var
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": true
+      }
+    ], // Require const declarations for variables that are never reassigned after declared
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }], // Suggest using arrow functions as callbacks
+
+    // Plugin Rules
+    "express/no-deprecated": "warn" // Warn about deprecated Express methods
+  }
+}
