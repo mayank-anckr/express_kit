@@ -1,4 +1,3 @@
-import { createClient } from "@supabase/supabase-js";
 import { createCustomError } from "../utils/customError";
 import supabaseClient from "../../supabase";
 
