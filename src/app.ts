@@ -17,6 +17,7 @@ import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import { createCustomError } from "./utils/customError";
 import userRoutes from "./routes/user.route";
+import cors from "cors";
 // import graphqlUploadExpress from "graphql-upload/GraphQLUpload.mjs";
 // import { AppoloServerPluginDrainHttpServer } from "apollo-server-core";
 
@@ -41,6 +42,8 @@ const server = new ApolloServer({
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 // app.use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }));
 
 //payment webhook
