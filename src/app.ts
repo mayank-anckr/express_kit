@@ -46,7 +46,7 @@ app.use(cors());
 // app.use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }));
 
 //payment webhook
-app.use("/api", paymentRoutes);
+// app.use("/api", paymentRoutes);
 //rate limiter
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -63,9 +63,9 @@ app.get("/", (req, res) => {
   res.send("My World!");
 });
 
-app.use("/api", demoRoutes);
-app.use("/api", authRoutes);
-app.use("/api", userRoutes);
+// app.use("/api", demoRoutes);
+// app.use("/api", authRoutes);
+// app.use("/api", userRoutes);
 
 async function startServer() {
   //error handling
